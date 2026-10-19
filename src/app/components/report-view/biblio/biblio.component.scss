@@ -1,0 +1,145 @@
+.table-wrapper {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  
+  .heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .table-scroll {
+    overflow-x: auto;
+    max-height: 600px;
+  border-radius: 8px;
+  background: #fff;
+  }
+  
+  .biblio-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    min-width: 1000px;
+  }
+  
+  .biblio-table th,
+  .biblio-table td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: top;
+    white-space: pre-line;
+  }
+  
+  .biblio-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .biblio-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  a {
+    color: #1a0dab;
+    text-decoration: underline;
+  }
+  
+  .view-more {
+    color: #007bff;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Specific wide column style */
+.wide-column {
+  min-width: 220px;
+  max-width: 400px;
+  white-space: pre-line;
+  word-break: break-word;
+}
+
+
+
+.narrow-column {
+  max-width: 120px;
+  min-width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* Default column */
+.biblio-table th,
+.biblio-table td {
+  padding: 8px 12px;
+  white-space: nowrap;
+  vertical-align: top;
+  text-align: left;
+}
+
+/* Wider columns */
+.wide-column {
+  min-width: 180px; // you can tweak this as needed
+  max-width: 300px;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* Narrow columns */
+.narrow-column {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+   min-width: 180px;
+  word-wrap: break-word;
+}
+
+
+
+
+.matrix-text {
+  white-space: pre-line;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.matrix-link {
+  color: #1976d2;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+
+
+.biblio-table th,
+.biblio-table td {
+  /* default styles */
+}
+
+.biblio-table th:nth-child(4),  /* e.g. 3rd column is Abstract */
+.biblio-table td:nth-child(4) {
+  min-width: 400px;
+  max-width: 600px;
+  width: 20vw;
+  white-space: pre-line;
+  word-break: break-word;
+}
+
+.biblio-table th:nth-child(3),  /* e.g. 3rd column is Abstract */
+.biblio-table td:nth-child(3) {
+  min-width: 200px;
+  max-width: 300px;
+  width: 40vw;
+  white-space: pre-line;
+  word-break: break-word;
+}

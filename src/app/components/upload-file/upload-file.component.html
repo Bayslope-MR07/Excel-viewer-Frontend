@@ -1,0 +1,38 @@
+<mat-card class="upload-card">
+  <mat-card-title>📂 Upload Excel or PDF File</mat-card-title>
+
+  <!-- File Input (hidden) -->
+  <input
+    type="file"
+    #fileInput
+    (change)="onFileSelected($event)"
+    accept=".xlsx,.xls,.pdf"
+    hidden
+  />
+
+  <!-- Upload Button -->
+  <button mat-raised-button color="primary" (click)="fileInput.click()">
+    <mat-icon>upload</mat-icon>
+    Choose File (Excel/PDF)
+  </button>
+
+  <!-- Show Selected File -->
+  <p *ngIf="selectedFileName" class="file-name">
+    ✅ {{ selectedFileName }}
+  </p>
+
+  <!-- Progress Bar -->
+  <mat-progress-bar
+    *ngIf="isLoading"
+    mode="indeterminate"
+    color="accent"
+  ></mat-progress-bar>
+
+  <!-- Navigation -->
+  <div class="nav-links">
+    <a mat-button routerLink="/">
+      <mat-icon>arrow_back</mat-icon>
+      Go to Dashboard
+    </a>
+  </div>
+</mat-card>
