@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: 'https://excel-viewer-backend.onrender.com',
+  apiUrl: 'https://excel-viewer-backend-nnyg.onrender.com',
 };
